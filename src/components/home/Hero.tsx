@@ -65,7 +65,7 @@ const Hero: React.FC<HeroProps> = ({
   }, [images.length]);
 
   return (
-    <div className="relative min-h-screen md:min-h-[90vh] lg:min-h-screen bg-charcoal-900 text-white overflow-hidden">
+    <div className="relative h-screen w-full bg-charcoal-900 text-white overflow-hidden -mt-[0px]">
       {/* Background images with sliding effect */}
       <div 
         ref={backgroundRef}
@@ -87,8 +87,8 @@ const Hero: React.FC<HeroProps> = ({
       </div>
       
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-4 sm:px-6 md:px-8 py-20 md:py-28 lg:py-36 xl:py-44 flex items-center min-h-screen md:min-h-[90vh] lg:min-h-screen">
-        <div className="max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl animate-fade-in-up">
+      <div className="relative z-20 container mx-auto px-4 sm:px-6 md:px-8 flex items-center h-full">
+        <div className="max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl animate-fade-in-up pt-16 md:pt-20">
           {/* Optional accent line */}
           <div className="w-12 md:w-16 h-0.5 bg-amber-400 mb-6 md:mb-8" />
           
