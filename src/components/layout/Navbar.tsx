@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
         <div className={`
           rounded-full 
           ${scrolled ? 'bg-white/90 backdrop-filter backdrop-blur-sm' : 'bg-transparent'} 
@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             <Link 
               to="/" 
-              className="font-serif text-2xl font-bold text-wood-800 flex items-center gap-2 transition-transform hover:scale-105 duration-300"
+              className="font-serif  font-bold text-wood-800 flex items-center gap-2 transition-transform hover:scale-105 duration-300"
             >
               <svg 
                 className="h-8 w-8 text-wood-600" 
