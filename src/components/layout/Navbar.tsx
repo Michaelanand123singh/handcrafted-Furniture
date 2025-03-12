@@ -71,11 +71,6 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className={`py-2 inline-block ${isActive('/about')}`}>
-                    About
-                  </Link>
-                </li>
-                <li>
                   <Link to="/contact" className={`py-2 inline-block ${isActive('/contact')}`}>
                     Contact
                   </Link>
@@ -137,15 +132,7 @@ const Navbar = () => {
                   Gallery
                 </Link>
               </li>
-              <li>
-                <Link 
-                  to="/about" 
-                  className={`block py-3 px-4 rounded-lg ${isActive('/about').includes('after') ? 'bg-wood-50' : 'hover:bg-gray-50'}`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  About
-                </Link>
-              </li>
+              
               <li>
                 <Link 
                   to="/contact" 
