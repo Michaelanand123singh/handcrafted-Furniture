@@ -30,3 +30,12 @@ export interface FurnitureItem {
     path: string;
     isExternal?: boolean;
   }
+
+  // Add this to src/types/index.ts
+export interface Testimonial {
+    id: number; // Using number instead of string based on your implementation
+    name: string;
+    image: string; // Using image instead of imageUrl to match your component
+    quote: string; // Using quote instead of text
+    role: string; // Using role instead of position
+  }

@@ -1,32 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Section from '../ui/Section';
+// Removed unused Section import
 import Button from '../ui/Button';
 import { FurnitureItem } from '../../types';
 
 const featuredItems: FurnitureItem[] = [
   {
-    id: 1,
-    title: "Walnut Dining Table",
-    image: "/featured-img/walnut.jpg",
+    id: "1",
+    name: "Walnut Dining Table", // Changed from title to name
+    imageUrl: "/featured-img/walnut.jpg", // Changed from image to imageUrl
     description: "A statement centerpiece with live-edge walnut and hand-carved details.",
     featured: true,
     category: "dining",
     material: "Walnut"
   },
   {
-    id: 2,
-    title: "Oak Bookshelf",
-    image: "/featured-img/oak.jpg",
+    id: "2",
+    name: "Oak Bookshelf", // Changed from title to name
+    imageUrl: "/featured-img/oak.jpg", // Changed from image to imageUrl
     description: "Solid oak bookshelf with adjustable shelving and dovetail joinery.",
     featured: true,
     category: "storage",
     material: "Oak"
   },
   {
-    id: 3,
-    title: "Cherry Coffee Table",
-    image: "/featured-img/cherry.jpg",
+    id: "3",
+    name: "Cherry Coffee Table", // Changed from title to name
+    imageUrl: "/featured-img/cherry.jpg", // Changed from image to imageUrl
     description: "Cherry wood coffee table featuring a distinctive river glass inlay.",
     featured: true,
     category: "living",
@@ -62,8 +62,8 @@ const FeaturedWorks: React.FC<FeaturedWorksProps> = ({
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
               
               <img 
-                src={item.image} 
-                alt={item.title} 
+                src={item.imageUrl} // Changed from item.image to item.imageUrl
+                alt={item.name} // Changed from item.title to item.name
                 className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" 
               />
               
@@ -83,7 +83,7 @@ const FeaturedWorks: React.FC<FeaturedWorksProps> = ({
               </div>
               
               <h3 className="text-xl md:text-2xl font-serif mb-3 group-hover:text-wood-700 transition-colors duration-300">
-                {item.title}
+                {item.name} {/* Changed from item.title to item.name */}
               </h3>
               
               <p className="text-charcoal-600 mb-5 leading-relaxed">
